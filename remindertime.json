@@ -1,0 +1,16 @@
+{
+  "name": "Reminder Time",
+    "short_name": "RT",
+    "description": "An app that helps you with creating reminders.",
+    "start_url": "/",
+    "theme_color": "#ecb0b0",
+    "background_color": "#fff",
+    "display": "standalone", 
+    "icons": [
+          {
+        "src": "heart.svg",
+        "sizes": "512x512"
+      }
+    ]
+  }
+  

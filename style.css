@@ -1,0 +1,290 @@
+/* 
+Big thanks to the Eric Meyer Reset!
+<3
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section
+{
+    display: block;
+}
+
+body
+{
+    line-height: 1;
+}
+
+ol,
+ul
+{
+    list-style: none;
+}
+
+blockquote,
+q
+{
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after
+{
+    content: '';
+    content: none;
+}
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* 
+<<- MY CSS RULES ->>
+
+<<- Style Guide ->>
+A style guide is a way to show basic styles and pattern rules when developing a brand or an organisation's materials
+Here, I'll be listing the colours and styles I want to be using consistently
+
+Headings: Verdana #343231 (Light Evening Black)
+
+
+Background: #ecb0b0 Pinky Pink
+Main: 
+Footer: 
+Navigation:
+
+Main Palette: Light Evening Black, Antique White, Red
+
+
+
+*/
+
+
+/*<<- Box Sizing ->>*/
+
+html
+{
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after
+{
+    box-sizing: inherit;
+}
+
+
+/*:root is a psuedoclass, and this is essentially
+selecting all of the HTML in the document and useful for
+declaring global CSS variables like font-family or background-colour
+
+Use it if you're confident enough, if not stick to body*/
+:root
+{
+    /*Colours*/
+    background-color: pink;
+    color: #343231;
+    border-top: hidden red 5px; /*It's always good practise to specify in comments what isn't currently being used*/
+
+    /*Fonts*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-size-adjust: none; /* Chrome on Android devices likes to scale text, so this prevents that */
+
+    /*Spacing and Sizing*/
+    margin: 1rem;
+
+
+}
+body{
+    background-color: #ecb0b0;
+    padding: 3%;
+    
+}
+
+
+
+/*
+<<- Headings ->> */
+
+h1, h2,p, p+p, li{
+    padding-top: 1rem;
+    color: #343231;
+}
+
+h1{
+    
+    font-size: 2rem;
+   
+}
+
+
+h2{
+
+    font-size: 1.5rem; 
+    padding-bottom: 1rem;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+
+/*
+<<- List Items ->> */
+ li{
+    padding: 0.1rem;
+ }
+
+
+
+/*
+<<- Behaviours ->> */
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+/*@media reduced motion media feature from Javascript lecture 
+Use if you are using different behaviours such as smooth scroll behaviour or panning for large images
+https: //developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+Thanks David !*/
+@media (prefers-reduced-motion)
+{
+    html
+    {
+        scroll-behavior: auto;
+    }
+}
+
+
+/*
+<<- Links ->> 
+
+It's considered good practise to remember that links need to be clear and underlined, contrasted and focused,
+and have a clear state for each of the pseudo-classes
+All of the states are important for accessibility, such as the hover state helping those with reduced muscle control
+click links, and the visited state helping those with short-term memory loss with keeping track of read content*/
+
+a {
+}
+
+a:visited{
+}
+
+a:hover{
+}
+
+a:active{
+}
+
+a:focus{
+}

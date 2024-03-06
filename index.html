@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!--This is Charlotte's boilerplate, and if you are seeing this with the intent to use it, all I ask for is some credit on your webpage <3-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--SEO Content Description tag-->
+        <meta name="description"
+            content="This is my Self Reminder Website Application, where you can make reminders to yourself on your desktop.">
+
+        <!--This doesn't have to be a PNG, change it to whatever you'd like (.ico, .jpeg, ect.)-->
+        <link rel="icon" type="image/svg" href="heart.svg">
+        <!-- A title is a great help to SEO, and a good practise should be <Your H1 Title | Site Title> -->
+        <title>Reminders | ReminderTime</title>
+        <!--Stylesheet File-->
+        <link rel="stylesheet" href="style.css">
+        <!-- Our Manifest for Web-->
+        <link rel="manifest" href="remindertime.json" />
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        
+        <!--Main Section-->
+        <main>
+            <h1>My Reminders</h1>
+            <form id="reminderForm">
+                <h2>Today I have to...</h2>
+                <input type="text" id="reminderContent">
+                <input type="submit" value="Remind Me!">
+            </form>
+            <section id="myReminders">
+            </section>
+        </main>
+      
+        <!--Javascript Code File-->
+
+  <script src="script.js" defer></script>
+  <!-- Register the app's service worker. -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js")
+        .then((registration) => {
+          console.log("Service Worker registered with scope:", registration.scope);
+        })
+        .catch((error) => {
+          console.error("Service Worker registration failed:", error);
+        });
+    }
+  </script>
+  
+  
+      
+    
+    </body>
+</html>
